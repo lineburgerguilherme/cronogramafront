@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { useForm } from 'react-hook-form';
 import React, { useState } from 'react';
-
+import CadProfessor from './components/CadastroProfessores';
 function App() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+ /* const { register, handleSubmit, formState: { errors } } = useForm();
 
   const DaysOfWeek  = [
     { id: 1, name: 'Segunda-feira' },
@@ -33,55 +33,11 @@ function App() {
   const onSubmit = (data) => {
    console.log(data)
   };
+  
+  */
   return (
     <div className="App">
-       <h1>Cadastro de professores</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <label htmlFor="name">Nome: </label>
-          <input type="text" id="name" {...register('name', { required: 'Por favor, insira um nome.' })} />
-          {errors.name && <div>{errors.name.message}</div>}
-        </div>
-        <div>
-          <label htmlFor="email">E-mail: </label>
-          <input type="email" id="email" {...register('email', { required: 'Por favor, insira um e-mail.' })} />
-          {errors.email && <div>{errors.email.message}</div>}
-        </div>
-        <div>
-        <label htmlFor="number">Quantidade de aulas semanais: </label>
-          <input type="number" id="number" {...register('number', {
-            required: 'Por favor, insira um número.',
-            min: {
-              value: 1,
-              message: 'O professor deve dar ao minimo 1 aula por semana'
-            },
-            max: {
-              value: 6,
-              message: 'O professor não pode dar mais de 6 dias de aula por semana.'
-            }
-          })} />
-          {errors.number && <div>{errors.number.message}</div>}
-        </div>
-
-        <div>
-          <label htmlFor='DaysOfWeek'> Dias Da Semana </label>
-          {DaysOfWeek.map(day => (
-        <div key={day.id}>
-          <input
-            type="checkbox"
-            id={`day-${day.id}`}
-            value={day.id}
-            checked={selectedDays.includes(day.id)}
-            onChange={handleDayChange}
-            {...register('Handler', {required: "É necessário ao menos um dia preenchido"})}
-          />
-          <label htmlFor={`day-${day.id}`}>{day.name}</label>
-        </div>
-      ))}
-      {errors.DaysOfWeek && <p>{errors.DaysOfWeek.message}</p>}
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
+       <CadProfessor/>
     </div>
   );
 }
