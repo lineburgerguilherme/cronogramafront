@@ -73,7 +73,7 @@ function App() {
             value={day.id}
             checked={selectedDays.includes(day.id)}
             onChange={handleDayChange}
-          
+            {...register('Handler', {required: "É necessário ao menos um dia preenchido"})}
           />
           <label htmlFor={`day-${day.id}`}>{day.name}</label>
         </div>
