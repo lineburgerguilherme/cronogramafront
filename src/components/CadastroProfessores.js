@@ -71,10 +71,10 @@ const CadProfessor = () => {
        <input
          type="checkbox"
          id={`day-${day.id}`}
-         className="Handler"
          value={day.id}
          checked={selectedDays.includes(day.id)}
          onChange={handleDayChange}
+         defaultChecked
          {...register('DaysOfWeek[day-${day.id}]', {required: "É necessário ao menos um dia preenchido"})}
        />
        <label htmlFor={`day-${day.id}`}>{day.name}</label>

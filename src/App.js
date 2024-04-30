@@ -3,6 +3,7 @@ import './App.css';
 import { useForm } from 'react-hook-form';
 import React, { useState } from 'react';
 import CadProfessor from './components/CadastroProfessores';
+import Routes from './Routes/Routes';
 function App() {
  /* const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -37,6 +38,9 @@ function App() {
   */
   return (
     <div className="App">
+      <div>
+        <Routes/>
+      </div>
        <CadProfessor/>
     </div>
   );
