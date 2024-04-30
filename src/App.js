@@ -26,7 +26,6 @@ function App() {
     } else {
       setSelectedDays(selectedDays.filter(dayId => dayId !== selectedDayId));
     }
-
   };
 
 
@@ -74,12 +73,12 @@ function App() {
             value={day.id}
             checked={selectedDays.includes(day.id)}
             onChange={handleDayChange}
-            {...register(`DaysOfWeek`, { required: true })}
+          
           />
           <label htmlFor={`day-${day.id}`}>{day.name}</label>
         </div>
       ))}
-      {errors.DaysOfWeek && <p>Selecione pelo menos um dia da semana</p>}
+      {errors.DaysOfWeek && <p>{errors.DaysOfWeek.message}</p>}
         </div>
         <button type="submit">Enviar</button>
       </form>
