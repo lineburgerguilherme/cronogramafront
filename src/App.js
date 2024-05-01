@@ -9,6 +9,7 @@ import CadSala from './components/CadastroSala';
 import CadCoordenador from './components/CadastroFase.js';
 import CadFase from './components/CadastroFase.js';
 import Login from './components/Login.js';
+import CadastroDiaExcecao from './components/CadastroDiaExeção.js';
 function App() {
  /* const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -45,7 +46,9 @@ function App() {
     <div className="App">
 
 
-       <Login/>
+       <CadastroDiaExcecao/>
+
+
     </div>
   );
 }
