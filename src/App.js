@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form';
 import React, { useState } from 'react';
 import CadProfessor from './components/CadastroProfessores';
 import Routes from './Routes/Routes';
+import CadDisciplina from './components/CadastroDisciplinas';
+import CadSala from './components/CadastroSala';
+import CadCoordenador from './components/CadastroFase.js';
+import CadFase from './components/CadastroFase.js';
 function App() {
  /* const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -38,11 +42,12 @@ function App() {
   */
   return (
     <div className="App">
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
+
        <CadProfessor/>
+       <CadDisciplina/>
+       <CadSala/>
+       <CadFase/>
     </div>
   );
 }
