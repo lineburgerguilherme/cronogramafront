@@ -8,8 +8,8 @@ import CadProfessor from '../components/CadastroProfessores';
 const Routes = () => {
   return (
     <Router>
-            <Route path='disciplina' component={<CadDisciplina/>} />
-            <Route path='professor' componet={<CadProfessor/>} />
+            <Route path='/disciplina' component={<CadDisciplina/>} />
+            <Route path='/professor' componet={<CadProfessor/>} />
     </Router>
   );
 }
