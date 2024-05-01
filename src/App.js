@@ -8,6 +8,7 @@ import CadDisciplina from './components/CadastroDisciplinas';
 import CadSala from './components/CadastroSala';
 import CadCoordenador from './components/CadastroFase.js';
 import CadFase from './components/CadastroFase.js';
+import Login from './components/Login.js';
 function App() {
  /* const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -44,10 +45,7 @@ function App() {
     <div className="App">
 
 
-       <CadProfessor/>
-       <CadDisciplina/>
-       <CadSala/>
-       <CadFase/>
+       <Login/>
     </div>
   );
 }
