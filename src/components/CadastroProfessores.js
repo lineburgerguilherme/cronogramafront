@@ -13,7 +13,7 @@ const CadProfessor = () => {
       { id: 4, name: 'Quinta-feira' },
       { id: 5, name: 'Sexta-feira' },
       { id: 6, name: 'Sábado' },
-      { id: 7, name: 'Domingo' }
+      { id: 7, name: 'Domingo'  }
     ];
   
     const [selectedDays, setSelectedDays] = useState([]);
