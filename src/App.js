@@ -3,13 +3,13 @@ import './App.css';
 import { useForm } from 'react-hook-form';
 import React, { useState } from 'react';
 import CadProfessor from './components/CadastroProfessores';
-import Routes from './Routes/Routes';
+import Routes from './Routes/Routes.js';
 import CadDisciplina from './components/CadastroDisciplinas';
 import CadSala from './components/CadastroSala';
 import CadCoordenador from './components/CadastroFase.js';
 import CadFase from './components/CadastroFase.js';
 import Login from './components/Login.js';
-import CadastroDiaExcecao from './components/CadastroDiaExeção.js';
+import CadExcecao from './components/CadastroDiaExecao.js';
 function App() {
  /* const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -46,7 +46,8 @@ function App() {
     <div className="App">
 
 
-       <CadastroDiaExcecao/>
+       <Login/>
+       <CadExcecao/>
 
 
     </div>

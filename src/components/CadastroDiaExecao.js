@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-function CadastroDiaExcecao() {
+function CadExcecao() {
     const [selectedDate, setSelectedDate] = useState(null);
     const [motivo, setMotivo] = useState('');
 
@@ -45,4 +45,4 @@ function CadastroDiaExcecao() {
     );
 }
 
-export default CadastroDiaExcecao;
+export default CadExcecao;
