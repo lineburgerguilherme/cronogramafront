@@ -10,6 +10,7 @@ const Routes = () => {
     <Router>
             <Route path='/disciplina' component={<CadDisciplina/>} />
             <Route path='/professor' componet={<CadProfessor/>} />
+            <Route path='/coordenador' component={<CadastroCoordenador/>}> /</Route>
     </Router>
   );
 }

@@ -38,7 +38,10 @@ function App() {
   */
   return (
     <div className="App">
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
        <CadProfessor/>
     </div>
   );
